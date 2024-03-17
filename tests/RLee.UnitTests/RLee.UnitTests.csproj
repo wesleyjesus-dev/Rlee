@@ -22,4 +22,7 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\RLee.Core\RLee.Core.csproj" />
+  </ItemGroup>
 </Project>

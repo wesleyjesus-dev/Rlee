@@ -7,6 +7,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6C501169
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RLee.UnitTests", "tests\RLee.UnitTests\RLee.UnitTests.csproj", "{F1F5B926-6276-49A8-BA25-1B1F6D55E987}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8543246E-18E5-4976-94B8-3BCFBEA55FBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RLee.Core", "src\RLee.Core\RLee.Core.csproj", "{335A418C-45C4-4A1C-99F9-EA2B65DABFE6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{6D13D9F4-C323-446B-BC7B-35F9AEAAAA37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RLee.SampleAPI", "samples\RLee.SampleAPI\RLee.SampleAPI.csproj", "{E6A9084A-0C14-4305-B3E6-390F1313A7DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +25,14 @@ Global
 		{F1F5B926-6276-49A8-BA25-1B1F6D55E987}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1F5B926-6276-49A8-BA25-1B1F6D55E987}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1F5B926-6276-49A8-BA25-1B1F6D55E987}.Release|Any CPU.Build.0 = Release|Any CPU
+		{335A418C-45C4-4A1C-99F9-EA2B65DABFE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{335A418C-45C4-4A1C-99F9-EA2B65DABFE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{335A418C-45C4-4A1C-99F9-EA2B65DABFE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{335A418C-45C4-4A1C-99F9-EA2B65DABFE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6A9084A-0C14-4305-B3E6-390F1313A7DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6A9084A-0C14-4305-B3E6-390F1313A7DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6A9084A-0C14-4305-B3E6-390F1313A7DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6A9084A-0C14-4305-B3E6-390F1313A7DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -26,5 +42,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F1F5B926-6276-49A8-BA25-1B1F6D55E987} = {6C501169-D835-41C1-8566-26D8EDAC0395}
+		{335A418C-45C4-4A1C-99F9-EA2B65DABFE6} = {8543246E-18E5-4976-94B8-3BCFBEA55FBD}
+		{E6A9084A-0C14-4305-B3E6-390F1313A7DA} = {6D13D9F4-C323-446B-BC7B-35F9AEAAAA37}
 	EndGlobalSection
 EndGlobal
