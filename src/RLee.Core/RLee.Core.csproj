@@ -10,11 +10,15 @@
     <None Remove="Frontend\" />
     <None Remove="Frontend\Property\" />
     <None Remove="Frontend\Material\" />
+    <None Remove="Backend\" />
+    <None Remove="Backend\Converters\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Frontend\" />
     <Folder Include="Frontend\Property\" />
     <Folder Include="Frontend\Material\" />
+    <Folder Include="Backend\" />
+    <Folder Include="Backend\Converters\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Grpc.Tools" Version="2.62.0">

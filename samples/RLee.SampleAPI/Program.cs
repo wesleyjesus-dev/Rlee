@@ -1,4 +1,6 @@
-﻿using RLee.Core.Frontend;
+﻿using System.Text.Json;
+using RLee.Core.Backend.Converters;
+using RLee.Core.Frontend;
 using RLee.Core.Frontend.Material;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,7 +16,14 @@ app.MapGet("/", () =>
         )
         .SetBottomNavigationBar(new Row());
 
-    return Results.Ok(new Column().SetChildren(new Row()));
+    var options = new JsonSerializerOptions
+    {
+        Converters = { new WidgetJsonConverter() },
+        WriteIndented = true
+    };
+
+    var membersJson = JsonSerializer.Serialize<Widget>(scaffold, options);
+    return Results.Ok(membersJson);
 });
 
 app.Run();
