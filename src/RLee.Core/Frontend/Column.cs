@@ -8,13 +8,14 @@ namespace RLee.Core.Frontend
     /// </summary>
     public class Column : Widget
     {
-        public CrossAxisAlignment CrossAxisAlignment = CrossAxisAlignment.Center;
-
-        public MainAxisAlignment MainAxisAlignment = MainAxisAlignment.Start;
-
-        public MainAxisSize MainAxisSize = MainAxisSize.Max;
-
         public List<Widget> Children { get; set; } = new();
+        public Clip ClipBehavior { get; set;}
+        public CrossAxisAlignment CrossAxisAlignment { get; set;} = CrossAxisAlignment.Center;
+        public Axis Direction{ get; set;} = Axis.Vertical;
+        public MainAxisAlignment MainAxisAlignment { get; set;} = MainAxisAlignment.Start;
+        public MainAxisSize MainAxisSize { get; set;} = MainAxisSize.Max;
+        public TextBaseline TextBaseline { get; set;} = TextBaseline.Alphabetic;
+
 
         public Column SetChildren(Widget widget)
         {
@@ -22,7 +23,7 @@ namespace RLee.Core.Frontend
             return this;
         }
 
-        public override string GetName() => "Column";
+        public override string GetName() => "column";
     }
 }
 

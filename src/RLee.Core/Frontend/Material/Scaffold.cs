@@ -19,8 +19,6 @@
         public Widget? Body { get; set; }
         public Widget? BottomNavigationBar { get; private set; }
 
-        public override string GetName() => "Scaffold";
-
         public Scaffold SetAppBar(Widget widget)
         {
             AppBar = widget;
@@ -38,6 +36,8 @@
             BottomNavigationBar = widget;
             return this;
         }
+
+                public override string GetName() => "row";
     }
 }
 

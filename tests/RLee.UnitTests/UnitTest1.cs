@@ -8,7 +8,7 @@ public class UnitTest1
     public void WhenAddRowInColumnTheColumnShouldBeAItem()
     {
         var column = new Column();
-        column.AddChildren(new Row());
-        Assert.Contains(new Row(), column.Childrens);
+        column.SetChildren(new Row());
+        Assert.Contains(new Row(), column.Children);
     }
 }

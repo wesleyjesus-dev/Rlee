@@ -4,8 +4,6 @@ namespace RLee.Core.Frontend.Material
 {
     public class AppBar : Widget
     {
-        public override string GetName() => "AppBar";
-
         public Color? Color { get; private set; }
         public Widget? Title { get; private set; }
         public Widget? Leading { get; private set; }
@@ -15,6 +13,8 @@ namespace RLee.Core.Frontend.Material
             Color = color;
             return this;
         }
+
+        public override string GetName() => "appBar";
     }
 }
 
