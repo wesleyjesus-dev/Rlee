@@ -1,5 +1,4 @@
-﻿using System.Text.Json;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 using RLee.Core.Frontend.Material;
 
 namespace RLee.Core.Frontend
@@ -10,6 +9,7 @@ namespace RLee.Core.Frontend
     [JsonDerivedType(typeof(Row))]
     public abstract class Widget
     {
+        [JsonPropertyName("$type")]
         public string Type => GetName();
         public Widget() => Key = Guid.NewGuid().ToString();
         public Widget(string key) => Key = key;

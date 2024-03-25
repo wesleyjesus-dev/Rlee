@@ -1,0 +1,35 @@
+{
+    "appBar": {
+        "color": null,
+        "title": null,
+        "leading": null,
+        "$type": "appBar",
+        "key": "d743d57f-3806-452c-bedc-ee95d7b7dd83"
+    },
+    "body": {
+        "children": [
+            {
+                "$type": "row",
+                "key": "039f7c2e-4378-4cf7-9cac-0728e066fd82"
+            },
+            {
+                "$type": "row",
+                "key": "af890a36-d901-4a7a-b389-2330db14cf11"
+            }
+        ],
+        "clipBehavior": "None",
+        "crossAxisAlignment": "Center",
+        "direction": "Vertical",
+        "mainAxisAlignment": "Start",
+        "mainAxisSize": "Max",
+        "textBaseline": "Alphabetic",
+        "$type": "column",
+        "key": "d7d83452-a405-4d30-a5d7-f538d93f326e"
+    },
+    "bottomNavigationBar": {
+        "$type": "row",
+        "key": "c9ce195b-b993-4e22-9a86-9bc3c99d82f1"
+    },
+    "$type": "scaffold",
+    "key": "fe3b81f1-9d1b-4720-914a-18ccddbde2b9"
+}

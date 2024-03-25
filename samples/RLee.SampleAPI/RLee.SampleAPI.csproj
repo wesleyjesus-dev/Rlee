@@ -12,5 +12,6 @@
     <ProjectReference Include="..\..\src\RLee.Core\RLee.Core.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+   <AssetsSourceFiles Include="widget.json"/>
   </ItemGroup>
 </Project>

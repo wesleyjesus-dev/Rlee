@@ -1,4 +1,5 @@
-﻿namespace RLee.Core.Frontend.Material {
+﻿namespace RLee.Core.Frontend.Material
+{
 
     /// <summary>
     /// https://api.flutter.dev/flutter/material/Scaffold-class.html
@@ -14,7 +15,7 @@
 
         public Scaffold() { }
         public Scaffold(Widget body) => Body = body;
-        
+
         public Widget? AppBar { get; set; }
         public Widget? Body { get; set; }
         public Widget? BottomNavigationBar { get; private set; }
@@ -37,7 +38,7 @@
             return this;
         }
 
-                public override string GetName() => "row";
+        public override string GetName() => "scaffold";
     }
 }
 
